@@ -1,6 +1,6 @@
 Dado um nome de usuário fornecido como parâmetro, o sistema deve obter os repositórios dele do Github e criar um arquivo CSV contendo nome do usuário, nome do repositório, url, linguagem e número de estrelas.
 
-https://api.github.com/users/willianresille/repos
+https://api.github.com/users/gpsilva/repos
 
 # json
 import json
@@ -23,4 +23,4 @@ l = [['1', 'jenkins'], [2, 'docker']]
 with open('/tmp/a.csv', 'w') as f:
     writer = csv.writer(f, delimiter='|')
     writer.writerows(l)  
-# python 
+# python
